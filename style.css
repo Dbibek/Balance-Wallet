@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+.header {
+  background-color: rgb(68, 240, 225);
+}
+.mainContainer {
+  width: 100%;
+  background-color: rgb(20, 145, 145);
+  list-style: none;
+  margin: auto;
+  padding: auto;
+}
+.header {
+  margin: auto;
+  padding: 4rem;
+  color: blue;
+}
+.input-section {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(68, 240, 225);
+  padding: 3rem;
+}
+.account {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border: 2px solid rgb(245, 161, 161);
+}
+.transaction-income {
+  list-style: none;
+}
+
+.list-div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid brown;
+}
+.list-div > div {
+  margin: 1rem ;
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+.transaction-expense {
+  list-style: none;
+}
+.incomeDiv,
+.expenseDiv {
+  width: 50%;
+  border: 1px solid red;
+}
+.balance {
+  text-align: center;
+  background-color: royalblue;
+  color: rgb(43, 4, 4);
+  margin: auto;
+  padding: 2rem;
+}

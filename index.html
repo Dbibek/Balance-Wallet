@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Your monthly Wallet calculator</h1>
+    </div>
+    <div class="mainContainer">
+      <div class="input-section">
+        <input
+          class="description"
+          type="text"
+          placeholder="             Description"
+        />
+        <input
+          class="amount"
+          type="text"
+          placeholder="                Amount"
+        />
+        <select class="selection">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button class="add-button">Add</button>
+      </div>
+      <div class="account">
+        <div class="incomeDiv">
+          <h1>Incomes</h1>
+          <div class="transaction-income"></div>
+        </div>
+        <div class="expenseDiv">
+          <h1>Expenses</h1>
+          <div class="transaction-expense"></div>
+        </div>
+      </div>
+      <div class="balance"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
