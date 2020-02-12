@@ -195,24 +195,3 @@ clear.addEventListener("click", () => {
   location.reload();
 });
 
-// deleteButton.addEventListener('click',(e)=>{
-//   e.currentTarget.parentNode.remove()
-// })
-
-// Deleting a transaction
-function deleteElementFromArray(arr, index) {
-  arr.splice(index, 1);
-  arrayToStorage(arr);
-  accountBalance();
-  assignEventListenerToDeleteIcons();
-}
-
-// Assigning an event listener to Delete Icons
-function assignEventListenerToDeleteIcons() {
-  let deleteIcon = document.querySelectorAll(".delete");
-  deleteIcon.forEach(function(el) {
-    el.addEventListener("click", e => {
-      deleteElementFromArray(incomes, e.currentTarget.parentNode.id);
-    });
-  });
-}
