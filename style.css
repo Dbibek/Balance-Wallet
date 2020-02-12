@@ -3,37 +3,55 @@
   margin: 0;
   padding: 0;
 }
+
+.header {
+  width: 100%;
+  margin: auto;
+  padding: 4rem;
+  color: rgb(27, 27, 58);
+  background-image: url(./assets/save-4776024_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* background-color: rgb(3, 95, 87);
+  margin: auto; */
+}
 h1 {
   text-align: center;
+  text-decoration: underline;
 }
-.header {
-  background-color: rgb(68, 240, 225);
-}
+
 .mainContainer {
   width: 100%;
-  background-color: rgb(20, 145, 145);
+  background-color: rgb(11, 73, 73);
   list-style: none;
   margin: auto;
   padding: auto;
+  border-top: 5px solid rgb(43, 4, 4);
 }
-.header {
-  margin: auto;
-  padding: 4rem;
-  color: blue;
-}
+
 .input-section {
   text-align: center;
   width: 80%;
   margin: auto;
-  background-color: rgb(68, 240, 225);
+  background-color: rgb(11, 73, 73);
   padding: 3rem;
+  border-radius: 2%;
+}
+.input-section > input {
+  padding: 1rem;
+}
+.selection {
+  padding: 1rem;
+}
+.add-button {
+  padding: 1rem;
 }
 .account {
   width: 80%;
   display: flex;
   justify-content: space-between;
   margin: auto;
-  border: 2px solid rgb(245, 161, 161);
 }
 .transaction-income {
   list-style: none;
@@ -42,12 +60,17 @@ h1 {
 .list-div {
   display: flex;
   justify-content: space-between;
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
 }
 .list-div > div {
-  margin: 1rem ;
+  margin: 1rem;
   text-decoration: underline;
   font-size: 1.4rem;
+}
+.list-div > button {
+  margin: 0 0 0.5rem 0.5rem;
+  padding: 0 0.2rem;
+  height: 2rem;
 }
 .transaction-expense {
   list-style: none;
@@ -55,12 +78,80 @@ h1 {
 .incomeDiv,
 .expenseDiv {
   width: 50%;
-  border: 1px solid red;
+  border: 1px solid rgb(34, 10, 10);
 }
 .balance {
   text-align: center;
-  background-color: royalblue;
+  background-color: rgb(11, 73, 73);
   color: rgb(43, 4, 4);
   margin: auto;
   padding: 2rem;
+}
+.clearButton {
+  text-align: center;
+  margin: 1rem;
+  border-bottom: 5px solid rgb(43, 4, 4);
+  border-top: 5px solid rgb(43, 4, 4);
+}
+.clear {
+  padding: 0.5rem 1rem;
+  background-color: rgb(190, 137, 22);
+  width: 7vw;
+  border-radius: 50px;
+  margin: 25px auto;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: 90ms;
+  border: none;
+}
+.clear:hover {
+  transform: scale(1.05);
+  background-color: #c23e3e;
+  transition: 210ms;
+  cursor: pointer;
+  border: none;
+}
+.delete-icon {
+  width: 2vw;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  justify-self: end;
+  margin-right: 1rem;
+  border: none;
+  cursor: pointer;
+}
+@keyframes stalk {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 20px;
+    top: 0px;
+  }
+  50% {
+    left: 20px;
+    top: 20px;
+  }
+  75% {
+    left: 0px;
+    top: 20px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.delete-icon:hover {
+  width: 2vw;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  justify-self: end;
+  margin-right: 1rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  animation-name: stalk;
+  animation-duration: 4s;
 }

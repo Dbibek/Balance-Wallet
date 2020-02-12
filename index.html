@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LocalStorage</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="header">
-      <h1>Your monthly Wallet calculator</h1>
+      <h1>Your Wallet calculator</h1>
     </div>
     <div class="mainContainer">
       <div class="input-section">
@@ -23,6 +29,7 @@
           placeholder="                Amount"
         />
         <select class="selection">
+          <option value="select">Select</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
@@ -37,6 +44,9 @@
           <h1>Expenses</h1>
           <div class="transaction-expense"></div>
         </div>
+      </div>
+      <div class="clearButton">
+        <button class="clear">Clear</button>
       </div>
       <div class="balance"></div>
     </div>
